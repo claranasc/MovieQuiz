@@ -202,6 +202,9 @@
                                 <state key="normal" title="Jogar Novamente">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="A8i-e5-NbX" eventType="touchUpInside" id="F7d-bO-J4Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtc-OG-3qp">
                                 <rect key="frame" x="84" y="284" width="246" height="158"/>
@@ -228,6 +231,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5h2-4A-vWj"/>
                     </view>
+                    <connections>
+                        <outlet property="lbScore" destination="Wtc-OG-3qp" id="kcw-Q9-MsG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbo-PX-SMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
