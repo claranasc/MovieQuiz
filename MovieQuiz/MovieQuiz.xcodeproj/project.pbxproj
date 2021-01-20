@@ -36,6 +36,7 @@
 		256BD54125B79DA600EC6F1B /* quote18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD50925B79D7900EC6F1B /* quote18.mp3 */; };
 		256BD54225B79DA600EC6F1B /* quote19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD4FF25B79D7700EC6F1B /* quote19.mp3 */; };
 		256BD54325B79DA600EC6F1B /* quote20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD50A25B79D7A00EC6F1B /* quote20.mp3 */; };
+		25EE821E25B8E61C0089904E /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EE821D25B8E61C0089904E /* GameOverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		256BD51225B79D7B00EC6F1B /* options.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = options.json; sourceTree = "<group>"; };
 		256BD51325B79D7C00EC6F1B /* quote11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quote11.mp3; sourceTree = "<group>"; };
 		256BD51425B79D7C00EC6F1B /* quote14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quote14.mp3; sourceTree = "<group>"; };
+		25EE821D25B8E61C0089904E /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				256BD4EA25B79CAE00EC6F1B /* AppDelegate.swift */,
 				256BD4EC25B79CAE00EC6F1B /* SceneDelegate.swift */,
 				256BD4EE25B79CAE00EC6F1B /* ViewController.swift */,
+				25EE821D25B8E61C0089904E /* GameOverViewController.swift */,
 				256BD4F025B79CAE00EC6F1B /* Main.storyboard */,
 				256BD4F325B79CB200EC6F1B /* Assets.xcassets */,
 				256BD4F525B79CB200EC6F1B /* LaunchScreen.storyboard */,
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EE821E25B8E61C0089904E /* GameOverViewController.swift in Sources */,
 				256BD4EF25B79CAE00EC6F1B /* ViewController.swift in Sources */,
 				256BD4EB25B79CAE00EC6F1B /* AppDelegate.swift in Sources */,
 				256BD4ED25B79CAE00EC6F1B /* SceneDelegate.swift in Sources */,
