@@ -231,6 +231,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5h2-4A-vWj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UQQ-VW-dHR"/>
                     <connections>
                         <outlet property="lbScore" destination="Wtc-OG-3qp" id="kcw-Q9-MsG"/>
                     </connections>
