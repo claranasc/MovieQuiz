@@ -147,17 +147,66 @@
                     <view key="view" contentMode="scaleToFill" id="fdo-gU-eKS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameOver" translatesAutoresizingMaskIntoConstraints="NO" id="v6Q-nL-GAr">
+                                <rect key="frame" x="-4" y="-4" width="422" height="900"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parabéns" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAE-t0-nlZ">
+                                <rect key="frame" x="105" y="174" width="204" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O seu total de acertos foi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCO-pc-hVh">
+                                <rect key="frame" x="110.5" y="243" width="193" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b83-23-dhO">
+                                <rect key="frame" x="30" y="772" width="354" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.32941176470588235" blue="0.27450980392156865" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2g9-IE-5gI"/>
+                                </constraints>
+                                <state key="normal" title="Jogar Novamente">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtc-OG-3qp">
+                                <rect key="frame" x="36.5" y="284" width="341" height="158"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="132"/>
+                                <color key="textColor" red="1" green="1" blue="0.5450980392" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oAE-t0-nlZ" firstAttribute="centerX" secondItem="fdo-gU-eKS" secondAttribute="centerX" id="FC3-da-pJk"/>
+                            <constraint firstAttribute="bottom" secondItem="v6Q-nL-GAr" secondAttribute="bottom" id="K9G-PD-oWb"/>
+                            <constraint firstItem="5h2-4A-vWj" firstAttribute="trailing" secondItem="b83-23-dhO" secondAttribute="trailing" constant="30" id="Peu-Lv-Fot"/>
+                            <constraint firstItem="b83-23-dhO" firstAttribute="leading" secondItem="5h2-4A-vWj" secondAttribute="leading" constant="30" id="PrW-hL-D32"/>
+                            <constraint firstItem="v6Q-nL-GAr" firstAttribute="top" secondItem="fdo-gU-eKS" secondAttribute="top" constant="-4" id="VNe-hj-YH1"/>
+                            <constraint firstItem="Wtc-OG-3qp" firstAttribute="top" secondItem="gCO-pc-hVh" secondAttribute="bottom" constant="20" id="VSE-mw-y1J"/>
+                            <constraint firstItem="gCO-pc-hVh" firstAttribute="top" secondItem="oAE-t0-nlZ" secondAttribute="bottom" constant="15" id="btf-xW-Pgo"/>
+                            <constraint firstItem="gCO-pc-hVh" firstAttribute="centerX" secondItem="fdo-gU-eKS" secondAttribute="centerX" id="gvc-8p-aW5"/>
+                            <constraint firstItem="v6Q-nL-GAr" firstAttribute="trailing" secondItem="5h2-4A-vWj" secondAttribute="trailing" constant="4" id="kBZ-eS-L6r"/>
+                            <constraint firstItem="5h2-4A-vWj" firstAttribute="bottom" secondItem="b83-23-dhO" secondAttribute="bottom" constant="40" id="srh-sX-Sn6"/>
+                            <constraint firstItem="oAE-t0-nlZ" firstAttribute="top" secondItem="5h2-4A-vWj" secondAttribute="top" constant="130" id="tHu-9E-BEo"/>
+                            <constraint firstItem="v6Q-nL-GAr" firstAttribute="leading" secondItem="5h2-4A-vWj" secondAttribute="leading" constant="-4" id="vAY-W4-Jnk"/>
+                            <constraint firstItem="Wtc-OG-3qp" firstAttribute="centerX" secondItem="fdo-gU-eKS" secondAttribute="centerX" id="vki-EX-4bD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5h2-4A-vWj"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbo-PX-SMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="98"/>
+            <point key="canvasLocation" x="869.56521739130437" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
         <image name="background" width="375" height="667"/>
+        <image name="gameOver" width="375" height="667"/>
         <image name="movieSound" width="375" height="267.5"/>
         <image name="music" width="23" height="23"/>
         <image name="pause" width="23" height="23"/>
