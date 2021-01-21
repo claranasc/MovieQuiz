@@ -45,6 +45,13 @@ class QuizManager {
         round = (quiz, options)
         return round!
     }
+    
+    func checkAnswer(_ answer: String) {
+        guard let round = round else {return}
+        if answer == round.quiz.name {
+            score += 1
+        }
+    }
 }
 
 struct Quiz: Codable {
