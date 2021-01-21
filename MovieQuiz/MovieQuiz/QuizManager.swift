@@ -8,10 +8,13 @@
 
 import Foundation
 
+typealias Round = (quiz: Quiz, options: [QuizOption])
+
 class QuizManager {
     
     let quizes: [Quiz]
     let quizOptions: [QuizOption]
+    var round: Round?
     var score: Int
     
     init() {
@@ -28,6 +31,19 @@ class QuizManager {
             quizes = []
             quizOptions = []
         }
+    }
+    
+    func generateRandomQuinz() -> Round {
+        let quizIndex = Int(arc4random_uniform(UInt32(quizes.count)))
+        let quiz = quizes[quizIndex]
+        var indexes: Set<Int> = [quizIndex]
+        while indexes.count < 4 {
+            let index = Int(arc4random_uniform(UInt32(quizes.count)))
+            indexes.insert(index)
+        }
+        let options = indexes.map({quizOptions[$0]})
+        round = (quiz, options)
+        return round!
     }
 }
 
