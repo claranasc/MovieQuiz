@@ -30,7 +30,6 @@
 		256BD53B25B79DA600EC6F1B /* quote12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD50825B79D7900EC6F1B /* quote12.mp3 */; };
 		256BD53C25B79DA600EC6F1B /* quote13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD50725B79D7900EC6F1B /* quote13.mp3 */; };
 		256BD53D25B79DA600EC6F1B /* quote14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD51425B79D7C00EC6F1B /* quote14.mp3 */; };
-		256BD53E25B79DA600EC6F1B /* quote15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD4FE25B79D7700EC6F1B /* quote15.mp3 */; };
 		256BD53F25B79DA600EC6F1B /* quote16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD50E25B79D7A00EC6F1B /* quote16.mp3 */; };
 		256BD54025B79DA600EC6F1B /* quote17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD50C25B79D7A00EC6F1B /* quote17.mp3 */; };
 		256BD54125B79DA600EC6F1B /* quote18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 256BD50925B79D7900EC6F1B /* quote18.mp3 */; };
@@ -49,7 +48,6 @@
 		256BD4F325B79CB200EC6F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		256BD4F625B79CB200EC6F1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		256BD4F825B79CB200EC6F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		256BD4FE25B79D7700EC6F1B /* quote15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quote15.mp3; sourceTree = "<group>"; };
 		256BD4FF25B79D7700EC6F1B /* quote19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quote19.mp3; sourceTree = "<group>"; };
 		256BD50025B79D7700EC6F1B /* quote8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quote8.mp3; sourceTree = "<group>"; };
 		256BD50125B79D7800EC6F1B /* quote1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quote1.mp3; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				256BD50825B79D7900EC6F1B /* quote12.mp3 */,
 				256BD50725B79D7900EC6F1B /* quote13.mp3 */,
 				256BD51425B79D7C00EC6F1B /* quote14.mp3 */,
-				256BD4FE25B79D7700EC6F1B /* quote15.mp3 */,
 				256BD50E25B79D7A00EC6F1B /* quote16.mp3 */,
 				256BD50C25B79D7A00EC6F1B /* quote17.mp3 */,
 				256BD50925B79D7900EC6F1B /* quote18.mp3 */,
@@ -221,7 +218,6 @@
 				256BD54125B79DA600EC6F1B /* quote18.mp3 in Resources */,
 				256BD53A25B79DA600EC6F1B /* quote11.mp3 in Resources */,
 				256BD53F25B79DA600EC6F1B /* quote16.mp3 in Resources */,
-				256BD53E25B79DA600EC6F1B /* quote15.mp3 in Resources */,
 				256BD53D25B79DA600EC6F1B /* quote14.mp3 in Resources */,
 				256BD53525B79DA600EC6F1B /* quote6.mp3 in Resources */,
 				256BD53025B79DA600EC6F1B /* quote1.mp3 in Resources */,

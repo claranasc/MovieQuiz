@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     var quizManager: QuizManager!
     var quizPlayer: AVAudioPlayer!
+    var playerItem: AVPlayerItem!
+    var backgroundMusicPlayer: AVPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,16 @@ class ViewController: UIViewController {
         quizManager = QuizManager()
         getNewQuiz()
         startTimer()
+        
+    }
+    
+    func playBackgroundMusic() {
+        let musicURL = Bundle.main.url(forResource: "MarchaImperial", withExtension: "mp3")!
+        playerItem = AVPlayerItem(url: musicURL)
+        backgroundMusicPlayer = AVPlayer(url: playerItem)
+        backgroundMusicPlayer.volume = 0.1
+        backgroundMusicPlayer.play()
+        backgroundMusicPlayer.addPeriodicTimeObserver(forInterval: <#T##CMTime#>, queue: <#T##DispatchQueue?#>, using: <#T##(CMTime) -> Void#>)
         
     }
     
