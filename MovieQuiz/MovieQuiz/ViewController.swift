@@ -55,11 +55,20 @@ class ViewController: UIViewController {
         quizPlayer.stop()
     }
     
-    func playQuiz() {
+    @IBAction func playQuiz() {
         guard let round = quizManager.round else {return}
         ivQuiz.image = UIImage(named: "movieSound")
+        if let url = Bundle.main.url(forResource: "quote\(round.quiz.number)", withExtension: "mp3") {
+            do {
+                quizPlayer = try AVAudioPlayer(contentsOf: url)
+                quizPlayer.volume = 1
+                quizPlayer.delegate = self
+                quizPlayer.play()
+            } catch {
+                
+            }
+        }
     }
-    
     
     @IBAction func checkAnswer(_ sender: UIButton) {
         quizManager.checkAnswer(sender.title(for: .normal)!)
@@ -77,3 +86,8 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: AVAudioPlayerDelegate {
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        ivQuiz.image = UIImage(named: "movieSoundPause")
+    }
+}
