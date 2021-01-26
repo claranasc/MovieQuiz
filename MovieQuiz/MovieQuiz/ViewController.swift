@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         quizManager = QuizManager()
         getNewQuiz()
         startTimer()
-        
     }
     
     func playBackgroundMusic() {
@@ -46,8 +45,6 @@ class ViewController: UIViewController {
     
             let percent = time.seconds / self.playerItem.duration.seconds
             self.slMusic.setValue(Float(percent), animated: true)
-            
-            
         }
     }
     
@@ -84,7 +81,6 @@ class ViewController: UIViewController {
                 quizPlayer.delegate = self
                 quizPlayer.play()
             } catch {
-                
             }
         }
     }
@@ -95,6 +91,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeMusicTime(_ sender: UISlider) {
+        backgroundMusicPlayer.seek(to: CMTime(seconds: Double(sender.value) * playerItem.duration.seconds, preferredTimescale: 1))
     }
     
     @IBAction func showHideSoundBar(_ sender: UIButton) {
