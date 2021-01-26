@@ -35,6 +35,11 @@ class ViewController: UIViewController {
         startTimer()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! GameOverViewController
+        vc.score = quizManager.score
+    }
+    
     func playBackgroundMusic() {
         let musicURL = Bundle.main.url(forResource: "MarchaImperial", withExtension: "mp3")!
         playerItem = AVPlayerItem(url: musicURL)
