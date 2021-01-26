@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        playBackgroundMusic()
+        viSoundBar.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,11 +39,16 @@ class ViewController: UIViewController {
     func playBackgroundMusic() {
         let musicURL = Bundle.main.url(forResource: "MarchaImperial", withExtension: "mp3")!
         playerItem = AVPlayerItem(url: musicURL)
-        backgroundMusicPlayer = AVPlayer(url: playerItem)
+        backgroundMusicPlayer = AVPlayer(playerItem: playerItem)
         backgroundMusicPlayer.volume = 0.1
         backgroundMusicPlayer.play()
-        backgroundMusicPlayer.addPeriodicTimeObserver(forInterval: <#T##CMTime#>, queue: <#T##DispatchQueue?#>, using: <#T##(CMTime) -> Void#>)
-        
+        backgroundMusicPlayer.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: 1), queue: nil) { (time) in
+    
+            let percent = time.seconds / self.playerItem.duration.seconds
+            self.slMusic.setValue(Float(percent), animated: true)
+            
+            
+        }
     }
     
     func getNewQuiz() {
@@ -95,6 +102,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeMusicStatus(_ sender: UIButton) {
+        if backgroundMusicPlayer.timeControlStatus == .paused {
+            backgroundMusicPlayer.play()
+            sender.setImage(UIImage(named: "pause"), for: .normal)
+        } else {
+            backgroundMusicPlayer.pause()
+            sender.setImage(UIImage(named: "play"), for: .normal)
+        }
     }
 }
 
